@@ -52,7 +52,7 @@ test { reverseAsFoldRight }
 
 /** Because it is tail-recursive, this version of `reverse` runs in constant space. */
 @scala.annotation.tailrec
-def reverseAcc[A](xs: List[A], acc: List[A] = Nil): List[A] = xs match {
+def reverseAcc[A](curr: List[A], acc: List[A] = Nil): List[A] = curr match {
   case Nil => acc
   case h :: t => reverseAcc(t, h :: acc)
 }
