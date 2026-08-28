@@ -1,4 +1,4 @@
-scalaVersion := "3.7.3"
+scalaVersion := "3.3.8"
 
 scalacOptions ++= Seq(
   "-deprecation",
@@ -7,5 +7,5 @@ scalacOptions ++= Seq(
   "-Wvalue-discard",
   "-language:strictEquality",
   "-Yexplicit-nulls",
-  "-Wsafe-init"
+  "-Ysafe-init"
 )
