@@ -18,6 +18,8 @@ jobs:
         distribution: 'temurin'
         java-version: '25'
     - uses: sbt/setup-sbt@v1
+      with:
+        sbt-runner-version: 1.13.0
     - name: Run tests
       run: sbt coverage test coverageReport
     - uses: codecov/codecov-action@v5
